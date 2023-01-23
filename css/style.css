@@ -41,7 +41,6 @@ nav .nav-links ul{
   
   /* debug */
   width: 100%;
-  list-style-type: none;
   justify-content: space-between;  
 }
 
@@ -61,3 +60,15 @@ nav .log-in{
   width: 25%;
 }
 
+ul{
+  list-style-type: none;
+
+}
+
+
+.footer-divs{
+  /* debug */
+  width: 20%;
+  align-items: stretch;
+
+}
