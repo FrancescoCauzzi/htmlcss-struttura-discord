@@ -1,1 +1,49 @@
+header{
+  background-color: aquamarine;
+  /* debug */
+  height: 580px;
+}
 
+.centered{
+  background-color: brown;
+  /* debug */
+  width: 80vw;
+  
+  margin: auto;
+}
+
+.flex-box{
+  display: flex;
+}
+
+nav{  
+  height: 80px;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+nav .logo{
+  background-color: azure;
+  /* debug */
+  height: 80px;
+  width: 25%;
+}
+
+nav .nav-links{
+  background-color: blue;
+  /* debug */
+  height: 80px;
+  width: 50%;  
+}
+
+nav .nav-links ul{
+  list-style-type: none;
+}
+
+nav .log-in{
+  background-color: plum;
+  /* debug */
+  height: 80px;
+  width: 25%;
+}
