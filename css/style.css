@@ -4,11 +4,9 @@ header{
   height: 580px;
 }
 
-.centered{
-  background-color: brown;
+.centered{  
   /* debug */
-  width: 80vw;
-  
+  width: 80vw;  
   margin: auto;
 }
 
@@ -17,16 +15,17 @@ header{
 }
 
 nav{  
-  height: 80px;
+  
   flex-direction: row;
   align-items: center;
-
+  height: 80px;
 }
 
 nav .logo{
   background-color: azure;
-  /* debug */
   height: 80px;
+  /* debug */
+  
   width: 25%;
 }
 
@@ -35,10 +34,24 @@ nav .nav-links{
   /* debug */
   height: 80px;
   width: 50%;  
+  justify-content: center;
 }
 
 nav .nav-links ul{
+  
+  /* debug */
+  width: 100%;
   list-style-type: none;
+  justify-content: space-between;  
+}
+
+nav .nav-links ul li{
+  background-color: blueviolet;
+  border: 2px solid gray;  
+  /* debug */
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 }
 
 nav .log-in{
@@ -47,3 +60,4 @@ nav .log-in{
   height: 80px;
   width: 25%;
 }
+
