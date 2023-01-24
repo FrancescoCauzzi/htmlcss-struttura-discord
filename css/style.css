@@ -6,8 +6,10 @@ header{
 
 .centered{  
   /* debug */
-  width: 80vw;  
+  min-width: 340px;  
+  max-width: 80vw;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .flex-box{
@@ -42,7 +44,8 @@ nav .nav-links ul{
   /* debug */
   width: 100%;
   justify-content: space-between;  
-}
+  flex-wrap: wrap;
+} 
 
 nav .nav-links ul li{
   background-color: blueviolet;
@@ -50,7 +53,8 @@ nav .nav-links ul li{
   /* debug */
   justify-content: center;
   align-items: center;
-  width: 20%;
+  min-width: 80px;
+  max-width: 20%;
 }
 
 nav .log-in{
@@ -63,9 +67,40 @@ nav .log-in{
 .sec-header{
   background-color: beige;
   height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
-.container{
+.sec-header h1{
+  
+}
+
+.sec-header p{
+  padding: 20px;
+  text-align-last: center;
+  
+
+}
+
+.sec-header .header-buttons{
+  flex-direction: row;
+  gap:10px;
+  flex-wrap: wrap;
+}
+
+.header-buttons button{
+  display: inline;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+main .container{
   background-color: royalblue;
   border: 2px solid grey;
   /* debug */
@@ -73,11 +108,16 @@ nav .log-in{
   height: 280px;
 }
 
-main section.centered{
+main .container .section-inner{
   background-color: crimson;
   border: 2px solid black;
   /* debug */
   height: 280px;
+  flex-direction: row;
+}
+
+.reverse{
+  flex-direction: row-reverse;
 }
 
 ul{
@@ -103,6 +143,16 @@ footer{
   background-color: antiquewhite;
   /* debug */
   height: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-left{
+  min-width: 30%;
+}
+
+.footer-right{
+  width: 70%;
 }
 
 .footer-bottom{
