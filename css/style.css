@@ -132,6 +132,14 @@ footer{
   height: 300px;
 }
 
+.footer-divs-left{
+  border: 2px solid black;
+  /* debug */
+  width: 100%;
+  align-items: stretch;
+
+}
+
 .footer-divs{
   border: 2px solid black;
   /* debug */
@@ -147,12 +155,14 @@ footer{
   flex-wrap: wrap;
 }
 
-.footer-left{
-  min-width: 30%;
+.footer-left{  
+  width: 30%;
+  justify-content: flex-start;
 }
 
 .footer-right{
   width: 70%;
+  justify-content: space-between;
 }
 
 .footer-bottom{
